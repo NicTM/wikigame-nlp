@@ -1,0 +1,183 @@
+sample,label
+
+open the page on the history of the Internet,v
+open the article on the timeline of historic inventions,v
+go to the page on the American Civil War,v
+go to the article on Mount Ararat,v
+visit the page about New York,v
+open the article about Las Palmas,v
+go to the page about the North Sea,v
+go to the article about the Windows API,v
+open the page on the United Kingdom,v
+visit the article on the Swedish language,v
+go to the page called "Nebuchadnezzar II",v
+open the article called "miniseries",v
+open to the page titled "Columbia River",v
+visit the page titled "whirlwind",v
+view the page on thermodynamics,v
+view the article on the chickpea,v
+visit the page about sustainability,v
+view the article about the Stefan-Boltzmann law,v
+view the page on the Silk Road,v
+visit the article on the binomial distribution,v
+view the page called "bi-metallic coin",v
+view the article called "The Rolling Stones",v
+visit the page titled "grammatical category",v
+view the article titled "Advanced Micro Devices",v
+click on "Trigonometric functions",v
+click the link to "John Wayne",v
+click on the link to the page about songbirds,v
+click on the link to the page on Mark Twain,v
+click the link to the article about Johann Sebastian Bach,v
+click the link to the article on geckos,v
+follow the link to "convective heat transfer",v
+follow the link to the page about skin cancer,v
+follow the link to the page on saccharomyces cerevisiae,v
+follow the link to the article about radio-controlled cars,v
+follow the link to the article on control theory,v
+
+back,b
+go back,b
+return,b
+before,b
+previous,b
+previous page,b
+previous article,b
+last,b
+last page,b
+last article,b
+go back to the last page,b
+go back to the last article,b
+go back to the article I was on,b
+go back to the page before this one,b
+article before this one,b
+go back once,b
+go back twice,b
+go back thrice,b
+back 4 pages,b
+return 5 pages before,b
+
+history",h
+log",h
+show the history",h
+show me the history",h
+show the log of visited pages",h
+show the log of pages I've visited",h
+show visited pages",h
+show all the visited pages",h
+show all the viewed pages",h
+show me all of the articles I visited",h
+show me all of the articles I viewed",h
+show pages I've visited",h
+show pages I've viewed",h
+show articles visited so far",h
+show articles viewed so far",h
+print the history",h
+print visited pages",h
+print viewed pages",h
+print history of visited articles",h
+print history of viewed articles",h
+
+show more,m
+show more of the page,m
+show more of the article,m
+show the entire page,m
+show the entire article,m
+show the whole page,m
+show the whole article,m
+view more,m
+view more of the page,m
+view more of the article,m
+view the entire page,m
+view the entire article,m
+view the whole page,m
+view the whole article,m
+read more,m
+read more of the page,m
+read more of the article,m
+open the article in the pager,m
+view the article in the pager,m
+show the full-page article,m
+view the full page,m
+
+web,w
+web browser,w
+open web,w
+open web browser,w
+view this article in the browser,w
+open article in browser,w
+open in web browser,w
+open in browser,w
+open in firefox,w
+open in chrome,w
+open in safari,w
+open in edge,w
+view in web browser,w
+view in browser,w
+view in firefox,w
+view in chrome,w
+view in safari,w
+view in edge,w
+
+links,l
+show links,l
+show all the links,l
+show the list of links,l
+list of links,l
+all of the links,l
+view all links,l
+view links,l
+view list of links,l
+
+show similar links,s
+show most similar links,s
+most similar links,s
+view similar links,s
+semantic similarity,s
+semantic similarities,s
+sort links by similarity,s
+show closest links,s
+closest links,s
+close links,s
+order links by similarity,s
+nearest links,s
+show nearest links,s
+view the nearest links,s
+semantically closest links,s
+links closest to the end article title,s
+links most similar to end point,s
+links nearest to end by semantic similarity,s
+
+ent,e
+entity,e
+entities,e
+find entities,e
+named entity recognition,e
+entity recognition,e
+named entities,e
+find named entities,e
+NER,e
+do NER,e
+recognize entities,e
+highlight entities,e
+label entities,e
+find the entities on this page,e
+label the entities in this summary,e
+show this summary with the entities highlighted,e
+identify the entities in this article,e
+
+quit,q
+quit game,q
+quit session,q
+close,q
+close game,q
+close session,q
+stop,q
+stop game,q
+stop session,q
+leave,q
+leave game,q
+leave session,q
+exit,q
+exit game,q
+exit session,q

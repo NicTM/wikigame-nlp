@@ -1,0 +1,7 @@
+click
+jellyfish
+pandas
+rich
+scikit-learn
+spacy >= 2.0
+wikipedia
