@@ -57,26 +57,29 @@ go back thrice,b
 back 4 pages,b
 return 5 pages before,b
 
-history",h
-log",h
-show the history",h
-show me the history",h
-show the log of visited pages",h
-show the log of pages I've visited",h
-show visited pages",h
-show all the visited pages",h
-show all the viewed pages",h
-show me all of the articles I visited",h
-show me all of the articles I viewed",h
-show pages I've visited",h
-show pages I've viewed",h
-show articles visited so far",h
-show articles viewed so far",h
-print the history",h
-print visited pages",h
-print viewed pages",h
-print history of visited articles",h
-print history of viewed articles",h
+history,hs
+log,hs
+show the history,hs
+show me the history,hs
+show the log of visited pages,hs
+show the log of pages I've visited,hs
+show visited pages,hs
+show all the visited pages,hs
+show all the viewed pages,hs
+show me all of the articles I visited,hs
+show me all of the articles I viewed,hs
+show pages I've visited,hs
+show pages I've viewed,hs
+show articles visited so far,hs
+show articles viewed so far,hs
+print the history,hs
+print visited pages,hs
+print viewed pages,hs
+print history of visited articles,hs
+print history of viewed articles,hs
+what is the history of visited pages,hs
+what is my history so far,hs
+what is the log of pages,hs
 
 show more,m
 show more of the page,m
@@ -128,6 +131,10 @@ all of the links,l
 view all links,l
 view links,l
 view list of links,l
+what are the links on this page,l
+what are the links,l
+what links are there,l
+which links can be found here,l
 
 show similar links,s
 show most similar links,s
@@ -147,6 +154,12 @@ semantically closest links,s
 links closest to the end article title,s
 links most similar to end point,s
 links nearest to end by semantic similarity,s
+what are the closest links,s
+what are the most relevant links,s
+what are the most similar links to the destination,s
+which links are most similar to the ending,s
+which links are closest to end page,s
+which links are most relevant,s
 
 ent,e
 entity,e
@@ -165,6 +178,9 @@ find the entities on this page,e
 label the entities in this summary,e
 show this summary with the entities highlighted,e
 identify the entities in this article,e
+what are the entities here,e
+what are the named entities on this page,e
+where are the named entities,e
 
 quit,q
 quit game,q
@@ -181,3 +197,32 @@ leave session,q
 exit,q
 exit game,q
 exit session,q
+
+help,h
+help me,h
+I need help,h
+help doc,h
+help document,h
+show help document,h
+instructions,h
+show instructions,h
+what are the instructions,h
+tell me the instructions,h
+readme,h
+show readme,h
+open readme,h
+can I see the readme,h
+getting started,h
+how to get started,h
+how do I get started,h
+which commands can I use,h
+what are the commands,h
+list of commands,h
+what can I type here,h
+what do I type here,h
+what do I do,h
+what am I doing,h
+what is this,h
+what is going on,h
+what are the rules,h
+what is the goal,h
