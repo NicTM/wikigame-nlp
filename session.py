@@ -10,11 +10,10 @@ from rich.prompt import Prompt
 from rich.text import Text
 
 import utils
-import wikigame
 from utils import console
 
 
-class Game:
+class GameSession:
     def __init__(self, start, end, config):
         with console.status("Initializing..."):
             # page variables -- current page, start point, end point, history
@@ -212,7 +211,3 @@ class Game:
             f"Classifying command as [bold blue]{p}[/bold blue] with [bold blue]{round(c*100,2)}%[/bold blue] confidence."
         )
         self.commands[p]()
-
-
-if __name__ == "__main__":
-    wikigame.main()

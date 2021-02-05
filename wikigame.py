@@ -11,7 +11,7 @@ from rich.prompt import IntPrompt, Prompt
 from rich.traceback import install
 
 from classification import LinearSVC
-from game import Game
+from session import GameSession
 from utils import console
 
 # initialize config and traceback module
@@ -36,7 +36,7 @@ def main():
         start, end = init_endpoints(random_endpoints=random_endpoints)
         begin = Prompt.ask("Use these endpoints?", choices=["y", "n"], default="y")
 
-    game = Game(start, end, config)
+    game = GameSession(start, end, config)
 
     while True:
         game.cmd = input(">>> ")
