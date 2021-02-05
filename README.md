@@ -21,7 +21,7 @@ The endpoints for the game are chosen from a list of "vital" articles. Build thi
 `python3 build_vital.py`
 
 Run the game:  
-`python3 wikigame.py` or `python3 game.py`
+`python3 wikigame.py`
 
 If running for the first time, select option 3 ("train classifier") before starting the game.
 
