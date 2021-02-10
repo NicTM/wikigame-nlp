@@ -12,6 +12,7 @@ Create a Python virtual environment and activate it:
 
 Clone this repository and install the required packages:  
 `git clone https://github.com/NicTM/wikigame-nlp.git`  
+`cd wikigame-nlp`  
 `pip install -r requirements.txt`
 
 Download the desired NLP model from spaCy. Make sure to set the correct model name in the configuration file `config.ini`. The default is "en_core_web_md".  
