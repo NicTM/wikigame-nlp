@@ -182,6 +182,30 @@ what are the entities here,e
 what are the named entities on this page,e
 where are the named entities,e
 
+gen,g
+generate,g
+generation,g
+generate text,g
+generated text,g
+generate new text,g
+generate following text,g
+generate the rest of the summary,g
+generate what comes after,g
+generate after the first few lines,g
+generate after start of summary,g
+create new text,g
+create new text after beginning of summary,g
+autocomplete,g
+auto-complete,g
+auto complete,g
+auto-complete text,g
+auto-complete after summary,g
+complete the summary,g
+complete the rest of the summary,g
+fill in the first few lines of the summary,g
+fill in the rest of the summary,g
+fill in what comes after the summary,g
+
 quit,q
 quit game,q
 quit session,q

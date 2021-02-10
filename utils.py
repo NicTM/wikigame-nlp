@@ -23,6 +23,7 @@ def commands(game):
         "l": game.links,
         "s": game.similar,
         "e": game.entities,
+        "g": game.generate,
         "q": game.quit,
         "h": game.help_cmd,
     }

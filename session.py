@@ -1,4 +1,6 @@
 """Class definition for `Game` object."""
+import os
+import re
 import webbrowser
 
 import joblib
@@ -7,15 +9,23 @@ import wikipedia
 from rich.panel import Panel
 from rich.progress import track
 from rich.prompt import Prompt
+from rich.table import Table
 from rich.text import Text
+from transformers import logging, pipeline
 
 import utils
 from utils import console
+
+# avoid/suppress HuggingFace warnings
+logging.set_verbosity_error()
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 
 class GameSession:
     def __init__(self, start, end, config):
         with console.status("Initializing..."):
+            self.config = config
+
             # page variables -- current page, start point, end point, history
             self.page = start
             self.start = start
@@ -30,6 +40,9 @@ class GameSession:
 
             # classifier
             self.clf = joblib.load(config["classifier"]["model_path"])
+
+            # generator
+            self.gen = None  # only loaded if necessary
 
             # miscellaneous variables
             self.commands = utils.commands(self)  # list of shortcuts/commands
@@ -187,6 +200,51 @@ class GameSession:
         # print labelled summary
         title = f"({len(self.history)}) {self.page.title}"
         console.print(Panel(text, title=title, border_style=self.history[-1][1]))
+
+    def generate(self):
+        """Generate text following the first X (default X=25) words of the summary."""
+
+        # if load_generator is false, alert user and return
+        if not self.config.getboolean("generator", "load_generator"):
+            console.print(
+                "[red]Generation is unavailable as the model cannot be loaded.",
+                "[red]To use this command, set 'load_generator' to true in the config file.",
+            )
+            return
+
+        # otherwise, load generator model if it is still None
+        elif self.gen is None:
+            model_name = self.config["generator"]["model_name"]
+            console.print(f"Loading model: [blue]{model_name}[/blue]")
+            self.gen = pipeline("text-generation", model=model_name)
+
+        # get variables from config
+        len_input = self.config.getint("generator", "len_input")
+        len_output = self.config.getint("generator", "len_output")
+        num_outputs = self.config.getint("generator", "num_outputs")
+
+        # get start of summary to use as generator input
+        summary = " ".join(self.page.summary.split()[:len_input])
+
+        with console.status("Generating..."):
+            # pass input to model and capture generated text
+            out_text = self.gen(
+                summary,
+                max_length=len_input + len_output,
+                num_return_sequences=num_outputs,
+            )
+            out_text = [o["generated_text"] for o in out_text]
+            # remove new lines repeated more than twice
+            out_text = [re.sub("\n{3,}", "\n\n", o) for o in out_text]
+            # try to avoid ending the generated text mid-sentence
+            out_text = [o[: o.rfind(".") + 1] for o in out_text]
+
+        # show generated text samples in a table format
+        table = Table(show_lines=True, show_header=False)
+        table.add_column()
+        for o in out_text:
+            table.add_row(summary + "[blue]" + o[len(summary) :])
+        console.print(table)
 
     def quit(self):
         """Exit the session with user confirmation."""

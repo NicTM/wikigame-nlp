@@ -70,6 +70,11 @@ Similarity is calculated using the spaCy model's word vectors. For multi-word ti
 ### entities - 'e'
 Highlights the named entities in the current page's summary. Entities are identified using the spaCy model.
 
+### generate - 'g'
+Passes the first X words of the summary as input to a generative model, which then attempts to "auto-complete" the text. Default X=25.
+
+This function uses a HuggingFace pipeline with the "text-generation" task identifier. The model used by default is `distilgpt2`.
+
 ### quit - 'q'
 Quits the game.
 
