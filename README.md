@@ -2,6 +2,8 @@
 
 Wikigame-NLP is a showcase of various ML/NLP techniques centered on the "Wikipedia game". In this game, the player tries to go from one Wikipedia article to another solely by following links. At each step, the player can execute a number of commands; including basic ones such as visiting another page, and ML-related ones such as highlighting named entities.
 
+A screenshot preview of a short game can be found in the `imgs` folder.
+
 Wikigame-NLP is in its early stages and is still a work in progress.
 
 ## Getting Started
